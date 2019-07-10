@@ -11,11 +11,11 @@ class School
   def add_student(name, grade)
     # if roster[grade] already exists, leave alone; else, set roster[grade] = []
     
-    @roster[:grade] ||= []
+    @roster[grade] ||= []
     
     # adding more students to roster
     
-    @roster[:grade] << name
+    @roster[grade] << name
     
     # if roster[grade].include?(grade)
     #   @roster[grade] << name
